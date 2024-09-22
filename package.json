@@ -1,0 +1,36 @@
+{
+  "name": "dockerfile_lint",
+  "version": "0.0.9",
+  "description": "Utility for linting a docker file against accepted good practices",
+  "main": "index.js",
+  "bin": {
+    "dockerfile_lint": "./bin/dockerfile_lint"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:projectatomic/dockerfile_lint.git"
+  },
+  "keywords": [
+    "dockerfile",
+    "validator",
+    "lint",
+    "check"
+  ],
+  "author": "Lindani Phiri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/projectatomic/dockerfile_lint/issues"
+  },
+  "dependencies": {
+    "js-yaml": "~3.2.2",
+    "extend": "~2.0.0",
+    "commander": "~2.5.0"
+  },
+  "devDependencies": {
+    "should": "~4.1.0",
+    "mocha": "~2.0.1"
+  }
+}
