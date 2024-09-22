@@ -9,7 +9,7 @@ A rule based 'linter' for [Dockerfiles](https://docs.docker.com/reference/builde
 1. run
   * Atomic CLI
 
-            atomic run projectatomic/dockerfile-lint
+            atomic run projectatomic/Dockerfile_lint
 
   * Docker CLI
 
@@ -94,7 +94,7 @@ This section includes a list of instructions that must exist in the dockerfile i
 
 Install from github from your application root directory:
 ```
-npm install git+https://github.com/projectatomic/dockerfile_lint
+npm install git+https://github.com/drylikov/Dockerfile_lint
 ```
 
 Import and use the validator:
@@ -109,35 +109,32 @@ var result = validator.validate(dockerfile);
 ## Command Line use
 You can install the linter globally on your pc:
 ```
-sudo npm install -g dockerfile_lint
+sudo npm install -g Dockerfile_lint
 
 ```
 Run the tool:
 ```
-dockerfile_lint  -f /path/to/dockerfile  [-r /path/to/rule/file]
+Dockerfile_lint  -f /path/to/dockerfile  [-r /path/to/rule/file]
 ```
 A default rule file is used if no rule file is given.
 
 You can also run the tool without installing it - just clone the source repository and run the tool from the bin directory :
 ```
-git clone git@github.com:projectatomic/dockerfile_lint.git
-cd dockerfile_lint/bin
+git clone git@github.com:drylikov/Dockerfile_lint.git
+cd Dockerfile_lint/bin
 chmod 555 dockerfile_lint
 dockerfile_lint  -f /path/to/dockerfile  [ -r /path/to/rule/file]
 ```
 
 To display results as JSON use the '-j' option:
 ```
-dockerfile_lint  -j -f /path/to/dockerfile  [ -r /path/to/rule/file]
+Dockerfile_lint  -j -f /path/to/dockerfile  [ -r /path/to/rule/file]
 ```
 
 Command Help:
 ```
-dockerfile_lint  -h
+Dockerfile_lint  -h
 ```
 
 #Credits
 The linter is based on https://github.com/Runnable/validate-dockerfile and https://github.com/goern/dockerfile_checker
-
-# License
-MIT
